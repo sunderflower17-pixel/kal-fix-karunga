@@ -10,7 +10,7 @@
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#FBCF2D">
 <meta property="og:type" content="website"><meta property="og:title" content="Wedding Car Rental from ₹4,499 | Luxury Car Booking – CabX"><meta property="og:description" content="Luxury, vintage and decorated wedding cars at fixed fares."><meta property="og:url" content="https://thecabx.com/wedding-car-rentals/">
-<link rel="preload" as="image" href="https://images.unsplash.com/photo-1561100966-f6aa0145e8e6?fm=webp&q=70&w=1200&auto=format&fit=crop" fetchpriority="high">
+<link rel="preload" as="image" href="wedding-car.jpeg" fetchpriority="high">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://thecabx.com/#org", "name": "CabX", "url": "https://thecabx.com/", "telephone": "+917458099909"}, {"@type": "Service", "name": "Wedding Car Rental and Booking", "serviceType": "Wedding car rental", "provider": {"@id": "https://thecabx.com/#org"}, "url": "https://thecabx.com/wedding-car-rentals/", "areaServed": "India", "description": "Luxury, vintage and decorated wedding cars, SUVs and baraat tempo travellers with verified chauffeurs at fixed fares."}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thecabx.com/"}, {"@type": "ListItem", "position": 2, "name": "Wedding Car Rentals", "item": "https://thecabx.com/wedding-car-rentals/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the wedding car rental price?", "acceptedAnswer": {"@type": "Answer", "text": "Wedding car booking price depends on the vehicle, hours and decoration. Starting prices: groom and vidai car from Rs 4,999 per day, bride's car from Rs 4,499 per day, premium SUVs and baraat tempo travellers from Rs 8,000 per day, and flower decoration from Rs 999. Send your date on WhatsApp for an exact fixed-fare quote."}}, {"@type": "Question", "name": "How do I do wedding car booking online?", "acceptedAnswer": {"@type": "Answer", "text": "Drop a Hii on our WhatsApp, give a missed call to 74580 99909, or use the quick form. Share your date, venue and preferred car, pay a small token to confirm, and we handle the chauffeur, decoration and timing."}}, {"@type": "Question", "name": "How do I find wedding car booking near me?", "acceptedAnswer": {"@type": "Answer", "text": "Share your pickup location and wedding date on WhatsApp and we confirm availability in your city within minutes. We are expanding across India, so ask even if your city is not listed."}}, {"@type": "Question", "name": "What is the luxury car booking price for a marriage?", "acceptedAnswer": {"@type": "Answer", "text": "Luxury car rental for a wedding is priced by model, hours, decoration and season, so it is quoted per booking rather than as one fixed rate. Multi-car packages that combine luxury cars, SUVs and tempo travellers usually save 10 to 15 percent."}}, {"@type": "Question", "name": "Do you have vintage cars for weddings?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, vintage and classic cars are available on request for the groom's entry, bride's entry and photoshoots. Tell us your date early, as vintage cars book out fast in peak season."}}, {"@type": "Question", "name": "Can I hire a luxury car for the baraat and bride's entry?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Choose a luxury car for the groom, another for the bride, and add SUVs for parents and VIP guests. All come with a verified chauffeur in formals."}}, {"@type": "Question", "name": "Do you provide a decorated car for wedding functions?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, floral and fabric decoration is available for any vehicle from Rs 999. Pick a theme that matches your wedding colours and the car arrives decorated before the muhurat."}}, {"@type": "Question", "name": "Can I book a car only for the vidai ceremony?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, vidai car booking is available on its own or bundled with the groom's full-day car for a better combined rate."}}, {"@type": "Question", "name": "Can I book a full convoy of cars for the wedding?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Mix luxury cars, SUVs and baraat tempo travellers into one multi-car package with a single booking and a single point of contact."}}, {"@type": "Question", "@type": "Answer", "text": "Yes. Decorated AC tempo travellers in 12, 17, 20 and 26 seater sizes are available."}}, {"@type": "Question", "name": "How far in advance should I book?", "acceptedAnswer": {"@type": "Answer", "text": "Book at least a week ahead, and earlier during peak wedding season (October to February) when dates fill up fast."}}]}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -357,6 +357,37 @@ footer{padding:44px 24px 24px; text-align:left}
   .fleet-card.convoy{flex-direction:column; text-align:center; padding:26px 22px}
   .fleet-card.convoy p{flex:none}
 }
+/* hero image more visible */
+.hero::before{background:linear-gradient(180deg,rgba(11,18,32,.2) 0%,rgba(11,18,32,.3) 45%,rgba(11,18,32,.78) 100%)}
+.hero-bg{animation:none}
+.hero h1,.hero p.lead{text-shadow:0 2px 14px rgba(0,0,0,.7)}
+
+/* mobile fixes */
+html,body{overflow-x:clip}
+img,svg{max-width:100%}
+@media(max-width:1199px){
+  .navrow{position:static}
+  .navlinks{border-radius:0 0 20px 20px}
+}
+@media(max-width:700px){
+  .wrap,.navrow{padding-left:16px; padding-right:16px}
+  .announce{font-size:12.5px; padding:8px 12px}
+  .hero{min-height:auto}
+  .hero-inner{padding:44px 18px 40px}
+  .hero h1{font-size:clamp(26px,7.4vw,34px)}
+  .hero .script{font-size:clamp(28px,8vw,38px)}
+  .hero p.lead{font-size:15px}
+  .trust-pill{font-size:11.5px; padding:6px 11px}
+  .hero-ctas{flex-direction:column; align-items:stretch}
+  .hero-ctas a{text-align:center}
+  .intro,.fleet,.pricing,.services,.beyond,.process,.testimonials,.faq,.cities,.cta-strip{padding-left:16px; padding-right:16px}
+  .intro h2,.section-head h2{font-size:24px}
+  .fleet-grid,.steps{grid-template-columns:1fr}
+  .steps{gap:30px}
+  th,td{padding:12px; font-size:14px}
+  .city-row{gap:10px}
+  .cta-strip h2,.cities h2{font-size:22px}
+}
 </style>
 </head>
 <body>
@@ -390,7 +421,7 @@ footer{padding:44px 24px 24px; text-align:left}
 <main>
 
 <section class="hero">
-  <img class="hero-bg" src="https://images.unsplash.com/photo-1561100966-f6aa0145e8e6?fm=webp&q=70&w=1200&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1561100966-f6aa0145e8e6?fm=webp&q=70&w=700&auto=format&fit=crop 700w, https://images.unsplash.com/photo-1561100966-f6aa0145e8e6?fm=webp&q=70&w=1200&auto=format&fit=crop 1200w, https://images.unsplash.com/photo-1561100966-f6aa0145e8e6?fm=webp&q=70&w=1800&auto=format&fit=crop 1800w" sizes="100vw" width="1200" height="800" alt="Decorated wedding car with floral decoration for baraat" fetchpriority="high" decoding="async">
+  <img class="hero-bg" src="wedding-car.jpeg" width="1200" height="800" alt="Decorated wedding car with floral decoration for baraat" fetchpriority="high" decoding="async">
   <div class="hero-inner">
     <div class="eyebrow">CabX Wedding &amp; Marriage Car Rentals</div>
     <h1>Wedding Car Rental &amp; Booking — </h1>
